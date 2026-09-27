@@ -1,0 +1,65 @@
+{
+  "brand": {
+    "primaryText": "X1S",
+    "secondaryText": "Core",
+    "subtitle": "Powered By X1Studios"
+  },
+  "background": {
+    "useCustomImage": true,
+    "imagePath": "img/backgrounds/*.png",
+    "images": [
+      "img/backgrounds/bg1.png",
+      "img/backgrounds/bg2.png",
+      "img/backgrounds/bg3.png",
+      "img/backgrounds/bg4.png",
+      "img/backgrounds/bg5.png",
+      "img/backgrounds/bg6.png",
+      "img/backgrounds/bg7.png",
+      "img/backgrounds/bg8.png",
+      "img/backgrounds/bg9.png",
+      "img/backgrounds/bg10.png"
+    ],
+    "intervalMs": 20000,
+    "transitionMs": 800
+  },
+  "intro": {
+    "primaryLogo": "img/x1s_logo.png",
+    "secondaryLogo": "img/x1s_horse.png",
+    "primaryHoldMs": 1300,
+    "secondaryHoldMs": 1500,
+    "transitionMs": 650,
+    "sound": "audio/x1s_intro.mp3",
+    "soundVolume": 0.8
+  },
+  "info": {
+    "title": "INFORMATION",
+    "text": "Welcome to X1SCore. Sit tight — this loading screen is fully configurable from html/config.json, and colors can be tweaked in html/style.css."
+  },
+  "music": {
+    "enabled": true,
+    "tracks": [
+      {
+        "title": "X1S Theme",
+        "artist": "X1S",
+        "artwork": "img/songs/x1s_theme.png",
+        "src": "audio/x1s_theme.mp3"
+      },
+      {
+        "title": "X1S Theme 2",
+        "artist": "X1S",
+        "artwork": "img/songs/x1s_theme.png",
+        "src": "audio/x1s_theme_2.mp3"
+      }
+    ]
+  },
+  "staff": {
+    "enabled": true,
+    "buttonLabel": "MEET THE STAFF & DEVELOPMENT TEAM",
+    "title": "STAFF & DEVELOPMENT TEAM",
+    "members": [
+      { "name": "Havoc Sheriff", "position": "Owner / Head Developer", "photo": "img/staff/owner.png" },
+      { "name": "Frost", "position": "X1S Management", "photo": "img/staff/management.png" },
+      { "name": "Big Peep", "position": "Script Developer", "photo": "img/staff/dev.png" }
+    ]
+  }
+}

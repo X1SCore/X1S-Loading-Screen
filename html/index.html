@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>X1S Loading Screen</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Rajdhani:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="intro-stage">
+    <div class="intro-flare" id="intro-flare"></div>
+    <div class="intro-logo" id="logo-primary">
+      <img src="img/x1s_logo.png" alt="X1S" />
+    </div>
+    <div class="intro-logo" id="logo-secondary">
+      <img src="img/x1s_horse.png" alt="X1S" />
+    </div>
+  </div>
+
+  <div id="main-screen">
+    <div class="bg-layer"></div>
+    <div class="bg-photo-base" id="bg-photo-base"></div>
+    <div class="bg-photo-overlay" id="bg-photo-overlay"></div>
+    <div class="grid-layer"></div>
+    <div class="stars-layer" id="stars-layer"></div>
+    <div class="vignette"></div>
+
+    <header class="brand-mark">
+      <img src="img/x1s_logo.png" alt="X1S" />
+      <div class="brand-text"><span id="brand-primary" class="brand-primary">X1S</span><span id="brand-secondary" class="brand-secondary">Core</span> <small id="brand-subtitle">Powered By X1Studios</small></div>
+    </header>
+
+    <section class="info-panel">
+      <h2 id="info-title">INFORMATION</h2>
+      <p id="info-text">Loading server content&hellip;</p>
+    </section>
+
+    <div class="top-right-stack">
+      <section class="music-panel" id="music-panel" hidden>
+        <div class="music-art">
+          <img id="music-art-img" src="img/x1s_horse.png" alt="" />
+        </div>
+        <div class="music-meta">
+          <div class="music-title" id="music-title">&nbsp;</div>
+          <div class="music-artist" id="music-artist">&nbsp;</div>
+          <div class="music-controls" id="music-controls">
+            <button class="music-nav" id="music-prev" aria-label="Previous track">&#9664;&#9664;</button>
+            <button id="music-toggle" aria-label="Play or pause">&#10074;&#10074;</button>
+            <button class="music-nav" id="music-next" aria-label="Next track">&#9654;&#9654;</button>
+            <span class="music-count" id="music-count"></span>
+          </div>
+          <div class="music-time">
+            <span id="music-current">00:00</span>
+            <div class="music-scrub"><div class="music-scrub-fill" id="music-scrub-fill"></div></div>
+            <span id="music-duration">00:00</span>
+          </div>
+        </div>
+      </section>
+
+      <button class="staff-toggle-btn" id="staff-toggle" hidden>
+        <span class="staff-toggle-icon">&#9776;</span>MEET THE STAFF &amp; DEVELOPMENT TEAM
+      </button>
+    </div>
+
+    <div class="staff-modal" id="staff-modal" hidden>
+      <div class="staff-modal-backdrop" id="staff-modal-backdrop"></div>
+      <div class="staff-modal-panel">
+        <button class="staff-modal-close" id="staff-modal-close" aria-label="Close">&times;</button>
+        <h2 id="staff-modal-title">STAFF &amp; DEVELOPMENT TEAM</h2>
+        <div class="staff-grid" id="staff-grid"></div>
+      </div>
+    </div>
+
+    <footer class="bottom-bar">
+      <div class="loading-row">
+        <span class="loading-label">LOADING<span class="dots"><span>.</span><span>.</span><span>.</span></span></span>
+        <span class="loading-pct" id="loading-pct">0%</span>
+      </div>
+      <div class="hint" id="music-hint" hidden>PRESS SPACE TO PAUSE MUSIC</div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+        <div class="progress-glow" id="progress-glow"></div>
+      </div>
+    </footer>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
